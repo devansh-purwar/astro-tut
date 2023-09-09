@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = 'Blog';
 ---
 
 <html lang="en">
@@ -8,14 +8,19 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/blog">Blog</a>
-		<h1>Blog</h1>
+		<h1>{pageTitle}</h1>
   <h2>Lorem blog</h2>
+  <ul>
+    <li><a href="/posts/post-1/">Post 1</a></li>
+    <li><a href="/posts/post-2/">Post 2</a></li>
+      <li><a href="/posts/post-3/">Post 3</a></li>
+  </ul>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dignissimos exercitationem iure placeat culpa nulla voluptas aut doloremque hic, reprehenderit, quos fugiat a id illo earum praesentium distinctio! Repellat, cupiditate.
         Tempora soluta corrupti explicabo nostrum laborum illo voluptatem obcaecati? Distinctio dolor id ipsam reiciendis quia ad voluptatum perspiciatis, accusamus, quas temporibus modi sed explicabo veritatis, dolorum provident officia deleniti esse.
         Vero fugiat exercitationem, soluta dicta, magnam iusto nesciunt nisi quae laudantium quisquam debitis assumenda minus rerum cum dolores quis maiores? Ducimus perferendis fugiat reiciendis expedita delectus nulla dolor molestias vitae?
