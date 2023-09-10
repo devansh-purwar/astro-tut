@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
-
+import Footer from '../components/footer.astro';
+import Header from '../components/header.astro';
 const pageTitle = 'Blog';
 ---
 
@@ -13,9 +14,7 @@ const pageTitle = 'Blog';
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/blog">Blog</a>
+        <Header />
 		<h1>{pageTitle}</h1>
   <h2>Lorem blog</h2>
   <ul>
@@ -73,5 +72,9 @@ const pageTitle = 'Blog';
         Molestias sit aliquam nisi animi quae, porro fuga deleniti veritatis necessitatibus soluta quos, voluptatum minima adipisci reprehenderit. Ex dolor quisquam harum. Facere inventore vero animi a labore ipsum eius quod.
         Labore necessitatibus laudantium tempora quia dolores dolore explicabo aut perspiciatis consequuntur, cumque iste neque distinctio tempore alias saepe ut natus iure cum provident ducimus accusantium dicta, quaerat quae ab. Voluptas.
         Provident culpa corporis eos sed fugiat obcaecati ea iste, molestias vitae atque beatae, quaerat corrupti explicabo ex. Tempore distinctio incidunt nesciunt debitis eos. Fugit illo voluptates, error repellendus blanditiis quaerat.</p>
-	</body>
+    <Footer/>
+    <script>
+        import "../scripts/menu.js";
+      </script>
+    </body>
 </html>
